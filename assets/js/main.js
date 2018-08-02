@@ -7,7 +7,7 @@ $(function () {
         setTimeout(function () {
             container.animate({
                 scrollTop: container.scrollTop() + target.offset().top
-            }, 500);
+            }, 1000);
         }, 150);
         return false;
     });
