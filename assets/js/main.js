@@ -12,4 +12,11 @@ $(function () {
         return false;
     });
 
+    var $hamburger = $(".hamburger");
+    $hamburger.click(function (e) {
+        console.log('clicked');
+        $hamburger.toggleClass("is-active");
+        // Do something else, like open/close menu
+    });
+
 });
