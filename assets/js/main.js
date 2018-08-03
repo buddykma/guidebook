@@ -1,4 +1,4 @@
-$(window).bind("load", function() {
+$(window).bind("load", function () {
     // code goes here
     $('body').addClass('loaded');
 });
@@ -17,14 +17,26 @@ $(function () {
         return false;
     });
 
+    var isToggled = false;
+
     var $hamburger = $(".hamburger");
     $hamburger.click(function (e) {
         console.log('clicked');
         $hamburger.toggleClass("is-active");
+        $('#myDropdown').toggle('show', function () {
+            isToggled = !isToggled;
+        });
         // Do something else, like open/close menu
     });
 
-
-
+    $(window).click(function (e) {
+        if (!e.target.classList.contains('dropbtn')) {
+            if (isToggled)
+                $('#myDropdown').toggle('show', function () {
+                    isToggled = !isToggled;
+                });
+            $hamburger.toggleClass("is-active", false);
+        }
+    });
 
 });
