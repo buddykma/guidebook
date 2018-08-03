@@ -19,4 +19,7 @@ $(function () {
         // Do something else, like open/close menu
     });
 
+
+    $('body').addClass('loaded');
+
 });
