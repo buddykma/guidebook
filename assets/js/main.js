@@ -1,3 +1,8 @@
+$(window).bind("load", function() {
+    // code goes here
+    $('body').addClass('loaded');
+});
+
 $(function () {
 
     var container = $('.parallax');
@@ -20,6 +25,6 @@ $(function () {
     });
 
 
-    $('body').addClass('loaded');
+
 
 });
