@@ -31,10 +31,10 @@ $(function () {
 
     $(window).click(function (e) {
         if (!e.target.classList.contains('dropbtn')) {
-            if (isToggled)
-                $('#myDropdown').toggle('show', function () {
-                    isToggled = !isToggled;
-                });
+            if (isToggled) {
+                $('#myDropdown').toggle('show');
+                isToggled = false;
+            }
             $hamburger.toggleClass("is-active", false);
         }
     });
