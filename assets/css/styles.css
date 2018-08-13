@@ -316,7 +316,6 @@ a.button2:hover {
     top: 0;
     width: 51%;
     height: 100%;
-    background-image: url("/assets/images/loading_page.jpg");
     z-index: 1000;
     -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateX(0);  /* IE 9 */
@@ -325,10 +324,14 @@ a.button2:hover {
 
 #loader-wrapper .loader-section.section-left {
     left: 0;
+    background-image: url("../images/loading_page_1.jpg");
+    background-size: 100% 100%;
 }
 
 #loader-wrapper .loader-section.section-right {
     right: 0;
+    background-image: url("../images/loading_page_2.jpg");
+    background-size: 100% 100%;
 }
 
 /* Loaded */
