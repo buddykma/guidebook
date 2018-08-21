@@ -5,8 +5,18 @@ $(window).bind("load", function () {
 
 $(function () {
 
-    var container = $('.parallax');
+    setTimeout(function () {
+        $('.bgimg-1 > .caption > .border').fadeOut(1500, function () {
+            $(this).text('Я ТВІЙ ПУТІВНИК МОГИЛЯНКОЮ');
+            $(this).fadeIn(1500, function () {
+                $('.bgimg-1 > .caption > .button2').hide().fadeIn(1500);
+            });
 
+        })
+    }, 2500);
+
+
+    var container = $('html, body');
     $('a').click(function () {
         var target = $($.attr(this, 'href'));
         setTimeout(function () {
